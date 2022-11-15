@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-text-logo">ST</div>
+        <div class="header-logo"><img class="img-logo" src="https://free-png.ru/wp-content/uploads/2021/11/free-png.ru-463-340x340.png"></div>
+        <div class="header-avatar"></div>
+    </header>
+
+
+<div class="left">
+<h2>Введіть назву міста</h2>
+ <p>Приклад: <span style="color:green; font-size:16px;">Kharkiv, Kyiv, Tokio ...</span></p>
+ <input type="text" id="city" placeholder="Введіть назву міста (англ.)..."/>
+ <button id="cityB" onclick="showDateTime();">OK</button>
+<h2>Або виберіть із списку</h2>
+<p><select  class="select" name="cityes">  
+    <option selected value="Kyiv">Київ</option>
+	<option value="Kharkiv">Харків</option>
+	<option value="Lviv">Львів</option>		
+	<option value="Berlin">Берлін</option>
+    <option value="Rio de Janeiro">Ріо-де-Жанейро</option>
+    <option value="Beijing">Пекін</option>
+    <option value="Melbourne">Мельбурн</option>
+    <option value="Managua">Манагуа</option>	
+	<option value="Madrid">Мадрид</option>
+    <option value="Helsinki">Хельсінки</option>
+    <option value="Warsaw">Варшава</option>
+    <option value="Ottawa">Оттава</option>
+    <option value="London">Лондон</option>
+	<option value="Rome">Рим</option>
+	<option value="Mexico city">Мехіко</option>
+    <option value="Delhi">Делі</option>    
+    <option value="Tokio">Токіо</option>	
+   </select></p>  
+<p class="text-center">Прогноз на 4 дня <br><span id="cityC"></span><p>	
+	<div id="tablo">            
+		<div class="day">
+			  <img id="tmp4"/><br>
+			 <p id="day1"></p>
+			 <div id="demo7"></div>
+			 <div id="demo5" ></div>
+			 <div id="demo6"></div>
+			 <div id="demo4"></div>
+		</div>
+
+		<div class="day">
+			   <img id="tmp5"/><br>
+			 <p id="day2"></p>
+			 <div id="demo10"></div>
+			 <div id="demo11"></div>
+			 <div id="demo8"></div>
+			 <div id="demo9"></div>
+		</div> 
+
+		<div class="day">
+			   <img id="tmp6"/><br>
+			 <p id="day3"></p>
+			 <div id="demo14"></div>
+			 <div id="demo15"></div>
+			 <div id="demo12"></div>
+			 <div id="demo13"></div>
+		</div> 
+
+		<div class="day">
+			   <img id="tmp7"/><br>
+			 <p id="day4"></p>
+			 <div id="demo18"></div>
+			 <div id="demo19"></div>
+			 <div id="demo16"></div>
+			 <div id="demo17"></div>
+		</div>
+  </div>
+  </div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
